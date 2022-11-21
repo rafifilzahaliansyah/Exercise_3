@@ -209,6 +209,41 @@ namespace Exercise_3
                                 data.display();
                             }
                             break;
+                        case '4':
+                            {
+                                if (data.listempty() == true)
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+
+                                //if list empyty
+                                if (data.listempty() == true)
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+
+                                //proses pencarian
+                                node previous, current;
+                                previous = current = null;
+
+                                Console.Write("\nMasukkan tahun pembelian yang dicari : ");
+                                int value = Convert.ToInt32(Console.ReadLine());
+
+                                //memulai pencarian
+                                if (data.Search(value, ref previous, ref current) == false)
+                                    Console.WriteLine("\nData tidak ditemukan");
+                                else//mencari output
+                                {
+                                    Console.WriteLine("\n====================");
+                                    Console.WriteLine("----Data ditemukan----");
+                                    Console.WriteLine("====================\n");
+                                    Console.WriteLine("No.Mahasiswa       : " + current.rollno);
+                                    Console.WriteLine("Nama Mahasiswa    : " + current.nama);
+                                }
+                            }
+                            break;
                     }
                 }
             }
