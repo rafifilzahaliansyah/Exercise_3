@@ -92,6 +92,33 @@ namespace Exercise_3
         //menambahkan method delete
         public bool delNode(int number)
         {
+            node previous, current;
+            previous = current = LAST.Next;
+
+            //mengecek spesifikasi isi nod sekarang masih ada didalam list atau tidak
+            if (Search(number, ref previous, ref current) == false)
+                return false;
+            previous.Next = current.Next;
+
+            //proses mendelete data
+            if (LAST.Next.rollno == LAST.rollno)
+            {
+                LAST.Next = null;
+                LAST = null;
+            }
+            else if (number == LAST.rollno)
+            {
+                LAST.Next = current.Next;
+            }
+            else
+            {
+                LAST = LAST.Next;
+            }
+            return true;
+        }
+        //mendisplay atau traverse semua node di list
+        public void display()
+        {
 
         }
 
