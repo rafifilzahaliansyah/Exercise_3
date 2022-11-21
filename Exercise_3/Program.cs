@@ -76,7 +76,7 @@ namespace Exercise_3
                 previous.Next = newnode;
             }
         }
-        //menambahkan medhod mencari
+        //menambahkan medhod mencari data
         public bool Search(int rollnumber, ref node previous, ref node current)
         {
             for (previous = current = LAST.Next; current != LAST; previous = current, current = current.Next)
@@ -201,6 +201,12 @@ namespace Exercise_3
                                     Console.WriteLine("\nData tidak ditemukan");
                                 else
                                     Console.WriteLine("Data dengan No" + value + "dihapus dari list");
+                            }
+                            break;
+                        //display atau traverse
+                        case '3':
+                            {
+                                data.display();
                             }
                             break;
                     }
