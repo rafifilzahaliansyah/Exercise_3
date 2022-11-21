@@ -254,6 +254,10 @@ namespace Exercise_3
                             }
                     }
                 }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
             }
         }
     }
