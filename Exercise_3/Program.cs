@@ -79,6 +79,19 @@ namespace Exercise_3
         //menambahkan medhod mencari
         public bool Search(int rollnumber, ref node previous, ref node current)
         {
+            for (previous = current = LAST.Next; current != LAST; previous = current, current = current.Next)
+            {
+                if (rollnumber == current.rollno)
+                    return true;//return true if the node is found
+            }
+            if (rollnumber == LAST.rollno)
+                return true;
+            else
+                return (false);
+        }
+        //menambahkan method delete
+        public bool delNode(int number)
+        {
 
         }
 
