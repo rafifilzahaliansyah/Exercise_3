@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Exercise_3
 {
-    //deklarasi variabel node
     class node
     {
 
