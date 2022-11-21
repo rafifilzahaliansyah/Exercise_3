@@ -8,7 +8,8 @@ namespace Exercise_3
 {
     class node
     {
-
+        //deklarasi variabel
+        public int rollno;
     }
 
     class Program
