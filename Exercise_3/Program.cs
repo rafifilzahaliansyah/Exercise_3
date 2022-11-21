@@ -16,7 +16,17 @@ namespace Exercise_3
 
     class CircularLinkedList
     {
+        node LAST;
+        public CircularLinkedList()
+        {
+            LAST = null;
+        }
 
+        //menambahkan node
+        public void addnode()
+        {
+
+        }
     }
 
     class Program
