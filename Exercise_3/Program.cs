@@ -29,9 +29,9 @@ namespace Exercise_3
             string nm;
 
             //deklarasi element
-            Console.WriteLine("\nMasukkan No.Barang : ");
+            Console.WriteLine("\nMasukkan Nama Mahasiswa : ");
             number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\nMasukkan Nama Barang : ");
+            Console.WriteLine("\nMasukkan Nama Mahasiswa : ");
             nm = Console.ReadLine();
 
             node newnode = new node();
@@ -139,13 +139,28 @@ namespace Exercise_3
         }
         public bool listempty()
         {
-
+            if (LAST == null)
+                return true;
+            else
+                return false;
         }
 
     }
 
     class Program
     {
+        public void Demo()
+        {
+            Console.WriteLine("=========================");
+            Console.WriteLine("------- DATA ANDA -------");
+            Console.WriteLine("=========================");
+            Console.WriteLine("1. Add a record to the list");
+            Console.WriteLine("2. Delete a record from the list");
+            Console.WriteLine("3. View all records in list");
+            Console.WriteLine("4. Search for a record in the list");
+            Console.WriteLine("5. Exit\n");
+            Console.WriteLine("Enter your choice (1-6): ");
+        }
         static void Main(string[] args)
         {
         }
