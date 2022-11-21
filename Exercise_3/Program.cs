@@ -163,6 +163,29 @@ namespace Exercise_3
         }
         static void Main(string[] args)
         {
+            Program menu = new Program();
+            CircularLinkedList data = new CircularLinkedList();
+            node a = new node();
+
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine();
+                    menu.Demo();
+                    char ch = Convert.ToChar(Console.ReadLine());
+
+                    switch(ch)
+                    {
+                        //add data
+                        case '1':
+                            {
+                                data.addnode();
+                            }
+                            break;
+                    }
+                }
+            }
         }
     }
 }
