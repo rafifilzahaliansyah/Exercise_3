@@ -119,6 +119,26 @@ namespace Exercise_3
         //mendisplay atau traverse semua node di list
         public void display()
         {
+            //if list empty
+            if (listempty())
+                Console.WriteLine("\nList Is Empty : ");
+            //menampilkan data
+            else
+            {
+                Console.WriteLine("\nRecord in the list are : ");
+                node currentNode;
+
+                currentNode = LAST.Next;
+                while (currentNode != LAST)
+                {
+                    Console.Write(currentNode.rollno + " " + currentNode.nama + "\n");
+                    currentNode = currentNode.Next;
+                }
+                Console.Write(LAST.rollno + " " + LAST.nama + "\n");
+            }
+        }
+        public bool listempty()
+        {
 
         }
 
