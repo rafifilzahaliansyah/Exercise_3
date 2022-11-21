@@ -11,6 +11,7 @@ namespace Exercise_3
         //deklarasi variabel
         public int rollno;
         public string nama;
+        public node Next;
     }
 
     class Program
