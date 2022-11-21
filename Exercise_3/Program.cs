@@ -76,6 +76,11 @@ namespace Exercise_3
                 previous.Next = newnode;
             }
         }
+        //menambahkan medhod mencari
+        public bool Search(int rollnumber, ref node previous, ref node current)
+        {
+
+        }
 
     }
 
