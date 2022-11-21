@@ -183,6 +183,26 @@ namespace Exercise_3
                                 data.addnode();
                             }
                             break;
+                        //del node
+                        case '2':
+                            {
+                                if (data.listempty())
+                                {
+                                    Console.WriteLine("\nlist is empty");
+                                    break;
+                                }
+                                //pencarian node list yang akan didelete
+                                Console.Write("\nMasukkan Data yang akan dihapus : ");
+                                int value = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+
+                                //output data yang didelete node
+                                if (data.delNode(value) == false)
+                                    Console.WriteLine("\nData tidak ditemukan");
+                                else
+                                    Console.WriteLine("Data dengan No" + value + "dihapus dari list");
+                            }
+                            break;
                     }
                 }
             }
